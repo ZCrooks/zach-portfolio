@@ -225,3 +225,23 @@ img {
   max-width: 100%;
   display: block;
 }
+
+h1 {
+  font-size: 5.62rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-size: 1.86rem;
+}
+
+p {
+  font-size: 1.62rem;
+}
+
+nav {
+  font-size: 2.5rem;
+}
