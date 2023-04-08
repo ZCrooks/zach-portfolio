@@ -245,13 +245,16 @@ h1, h2, i {
   color: #DADADA;
 }
 
-.sub-heading, span, a {
+.sub-heading, .period, a {
   color: #D19D46;
 }
 
 h1 {
   font-size: 5.62rem;
   font-weight: 800;
+}
+h1 .underline {
+  border-bottom: 10px solid #E3AA48;
 }
 
 h2 {
@@ -297,17 +300,19 @@ li p {
   color: #DADADA;
 }
 
-u {
-  -webkit-text-decoration: #E3AA48 5px solid underline;
-          text-decoration: #E3AA48 5px solid underline;
-}
-
 header, .about, .contact, footer {
   background-color: #2E2E35;
 }
 
 .skills, .portfolio {
   background-color: #34343B;
+}
+
+.main-image div {
+  background-color: #2B2B34;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
 }
 
 nav {
@@ -349,4 +354,31 @@ nav .links i:hover {
 }
 nav .links i:focus {
   color: #E3AA48;
+}
+
+.heading {
+  padding: 10% 0 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+align-items:flex-start .heading .main-image {
+  padding-left: 2%;
+}
+.heading img {
+  position: relative;
+  bottom: 10%;
+  right: 5%;
+}
+.heading .introduction {
+  padding-left: 4%;
+}
+.heading .introduction h2 {
+  padding-bottom: 20px;
+}
+.heading .introduction p {
+  padding-bottom: 20px;
 }

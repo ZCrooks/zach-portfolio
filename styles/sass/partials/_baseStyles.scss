@@ -20,13 +20,16 @@ h1, h2, i{
     color: $headerColor;
 }
 
-.sub-heading, span, a {
+.sub-heading, .period, a {
     color: $secondaryHeaderColor;
 }
 
 h1 {
     font-size: 5.62rem;
     font-weight: 800;
+    & .underline {
+        border-bottom: 10px solid $iconColor;
+    }
 }
 
 h2 {
@@ -74,10 +77,6 @@ li {
     }
 }
 
-u {
-    text-decoration: $iconColor 5px solid underline;
-}
-
 // BACKGROUND COLORS
 header, .about, .contact, footer {
     background-color: $primaryColor;
@@ -85,4 +84,14 @@ header, .about, .contact, footer {
 
 .skills, .portfolio {
     background-color: $secondaryColor;
+}
+
+.main-image {
+    & div {
+        background-color: $mainPicColor; 
+        border-radius: 50%;
+        height: 500px;
+        width: 500px;
+    }
+    
 }

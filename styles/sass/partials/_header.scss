@@ -32,4 +32,28 @@ nav {
     }
 }
 
+// MAIN HEADING
+.heading {
+    padding: 10% 0 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start
+    & .main-image{
+        padding-left: 2%;
+    }
+    & img {
+        position: relative;
+        bottom: 10%;
+        right: 5%;
+    }
+    & .introduction {
+        padding-left: 4%;
+        & h2 {
+        padding-bottom: 20px;
+        }  
+        & p {
+            padding-bottom: 20px;
+        }
+    }
 
+}
