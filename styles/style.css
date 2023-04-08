@@ -319,8 +319,19 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav a {
-  margin: 10px;
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+nav li, nav .separator {
+  padding-left: 25px;
 }
 nav .page-links a:hover {
   color: #E3AA48;
@@ -338,7 +349,4 @@ nav .links i:hover {
 }
 nav .links i:focus {
   color: #E3AA48;
-}
-nav div {
-  display: inline;
 }

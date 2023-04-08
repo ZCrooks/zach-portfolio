@@ -3,8 +3,15 @@ nav {
     padding: 20px 0 0 0;
     display: flex;
     justify-content:space-between;
-    & a {
-        margin: 10px;
+    & ul {
+        display: flex;
+    }
+    & .menu {
+        display: flex;
+        padding: 10px;
+    }
+    & li, .separator {
+        padding-left: 25px;
     }
     & .page-links a:hover{
         color: $iconColor;
@@ -23,7 +30,6 @@ nav {
     & .links i:focus {
         color: $iconColor;
     }
-    & div {
-        display: inline;
-    }
 }
+
+
