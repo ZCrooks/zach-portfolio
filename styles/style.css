@@ -226,8 +226,32 @@ img {
   display: block;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, nav, a {
+  font-family: "Open Sans";
+}
+
+h1, h2, i {
+  color: #DADADA;
+}
+
+.sub-heading {
+  color: #D19D46;
+}
+
 h1 {
   font-size: 5.62rem;
+  font-weight: 800;
 }
 
 h2 {
@@ -236,12 +260,47 @@ h2 {
 
 h3 {
   font-size: 1.86rem;
+  color: #D19D46;
+}
+
+h2, h3, nav {
+  font-weight: 700;
 }
 
 p {
   font-size: 1.62rem;
+  font-weight: 400;
+  font-family: "Nunito";
+  color: #8F8F8F;
 }
 
 nav {
   font-size: 2.5rem;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  color: #B8B7B7;
+}
+nav span {
+  color: #8F8F8F;
+}
+
+li {
+  list-style-type: none;
+}
+li p {
+  color: #E3AA48;
+}
+
+.portfolio a {
+  color: #DADADA;
+}
+
+header, .about, .contact, footer {
+  background-color: #2E2E35;
+}
+
+.skills, .portfolio {
+  background-color: #34343B;
 }

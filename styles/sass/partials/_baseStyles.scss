@@ -1,14 +1,32 @@
-// h1 - 90 Px
-// h2 - 60 Px
-// p - 26 Px
-// Nav - 40 Px
-// 
+// Reset padding and margin for all objects
+* {
+    margin: 0;
+    padding: 0;
+}
 
 // WRAPPER
+.wrapper {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
 
 // FONT SIZES AND STYLES
+h1, h2, h3, nav, a {
+    font-family: $headerFont;
+}
+
+h1, h2, i{
+    color: $headerColor;
+}
+
+.sub-heading {
+    color: $secondaryHeaderColor;
+}
+
 h1 {
     font-size: 5.62rem;
+    font-weight: 800;
 }
 
 h2 {
@@ -17,14 +35,49 @@ h2 {
 
 h3 {
     font-size: 1.86rem;
+    color: $secondaryHeaderColor;
 }
-p {
+
+h2, h3, nav {
+    font-weight: 700;
+}
+
+p{
     font-size: 1.62rem;
+    font-weight: 400;
+    font-family: $paragraphFont;
+    color: $paragraphColor;
 }
 
 nav {
     font-size: 2.5rem;  
+    text-decoration: none;
+    & a {
+        text-decoration: none;
+        color: $navColor;
+    }
+    & span {
+        color: $paragraphColor;
+    }
 }
 
+li {
+    list-style-type: none;
+    & p {
+        color: $iconColor;  
+    } 
+}
 
+.portfolio {
+    & a {
+        color: $headerColor;
+    }
+}
+// BACKGROUND COLORS
+header, .about, .contact, footer {
+    background-color: $primaryColor;
+}
 
+.skills, .portfolio {
+    background-color: $secondaryColor;
+}
