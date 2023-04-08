@@ -309,3 +309,36 @@ header, .about, .contact, footer {
 .skills, .portfolio {
   background-color: #34343B;
 }
+
+nav {
+  padding: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav a {
+  margin: 10px;
+}
+nav .page-links a:hover {
+  color: #E3AA48;
+  border-bottom: 5px solid #E3AA48;
+  padding: 0 0 4px;
+}
+nav .page-links a:focus {
+  color: #E3AA48;
+  -webkit-text-decoration: 5px solid underline #E3AA48;
+          text-decoration: 5px solid underline #E3AA48;
+  position: relative;
+}
+nav .links i:hover {
+  color: #E3AA48;
+}
+nav .links i:focus {
+  color: #E3AA48;
+}
+nav div {
+  display: inline;
+}

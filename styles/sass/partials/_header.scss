@@ -1,0 +1,29 @@
+// NAV BAR
+nav {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content:space-between;
+    & a {
+        margin: 10px;
+    }
+    & .page-links a:hover{
+        color: $iconColor;
+        border-bottom: 5px solid $iconColor;
+        padding: 0 0 4px;
+        
+    }
+    & .page-links a:focus {
+        color: $iconColor;
+        text-decoration: 5px solid underline $iconColor;
+        position: relative;
+    }
+    & .links i:hover{
+        color: $iconColor;
+    }
+    & .links i:focus {
+        color: $iconColor;
+    }
+    & div {
+        display: inline;
+    }
+}
