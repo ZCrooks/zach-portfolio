@@ -20,7 +20,7 @@ h1, h2, i{
     color: $headerColor;
 }
 
-.sub-heading {
+.sub-heading, span, a {
     color: $secondaryHeaderColor;
 }
 
@@ -56,7 +56,7 @@ nav {
         text-decoration: none;
         color: $navColor;
     }
-    & span {
+    & .separator {
         color: $paragraphColor;
     }
 }
@@ -73,6 +73,11 @@ li {
         color: $headerColor;
     }
 }
+
+u {
+    text-decoration: $iconColor 5px solid underline;
+}
+
 // BACKGROUND COLORS
 header, .about, .contact, footer {
     background-color: $primaryColor;

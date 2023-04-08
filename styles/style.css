@@ -245,7 +245,7 @@ h1, h2, i {
   color: #DADADA;
 }
 
-.sub-heading {
+.sub-heading, span, a {
   color: #D19D46;
 }
 
@@ -282,7 +282,7 @@ nav a {
   text-decoration: none;
   color: #B8B7B7;
 }
-nav span {
+nav .separator {
   color: #8F8F8F;
 }
 
@@ -295,6 +295,11 @@ li p {
 
 .portfolio a {
   color: #DADADA;
+}
+
+u {
+  -webkit-text-decoration: #E3AA48 5px solid underline;
+          text-decoration: #E3AA48 5px solid underline;
 }
 
 header, .about, .contact, footer {
