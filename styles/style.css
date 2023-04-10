@@ -307,6 +307,9 @@ header, .about, .contact, footer {
 .skills, .portfolio {
   background-color: #34343B;
 }
+.skills li, .portfolio li {
+  background-color: #2E2E35;
+}
 
 .main-image div {
   background-color: #2B2B34;
@@ -361,11 +364,11 @@ nav .links i:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-align-items:flex-start .heading .main-image {
+.heading .main-image {
   padding-left: 2%;
 }
 .heading img {
@@ -381,4 +384,35 @@ align-items:flex-start .heading .main-image {
 }
 .heading .introduction p {
   padding-bottom: 20px;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 20px;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10% 0 10% 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills ul li {
+  margin: 15px;
+  padding: 15px;
+}
+.skills img {
+  width: 250px;
+  height: 250px;
 }

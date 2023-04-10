@@ -84,6 +84,9 @@ header, .about, .contact, footer {
 
 .skills, .portfolio {
     background-color: $secondaryColor;
+    & li { 
+      background-color: $primaryColor;  
+    }
 }
 
 .main-image {
