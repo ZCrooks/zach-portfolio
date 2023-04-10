@@ -249,6 +249,10 @@ h1, h2, i {
   color: #D19D46;
 }
 
+.sub-heading {
+  font-weight: 800;
+}
+
 h1 {
   font-size: 5.62rem;
   font-weight: 800;
@@ -401,7 +405,7 @@ nav .links i:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10% 0 10% 0;
+  padding: 2% 0 5% 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -415,4 +419,13 @@ nav .links i:focus {
 .skills img {
   width: 250px;
   height: 250px;
+  padding-bottom: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 2% 0 5% 0;
+}
+.about p {
+  margin-top: 20px;
 }
