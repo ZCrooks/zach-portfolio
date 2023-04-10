@@ -463,3 +463,50 @@ nav .links i:focus {
   color: #E3AA48;
   position: relative;
 }
+
+.contact {
+  padding: 2% 0 2% 0;
+  text-align: center;
+}
+.contact p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+.contact form input, .contact form textarea {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid #D19D46;
+}
+.contact form button {
+  background-color: #DADADA;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid #DADADA;
+}
+.contact form button:hover {
+  background-color: #B8B7B7;
+}
+.contact form button:focus {
+  background-color: #B8B7B7;
+}
+
+footer {
+  text-align: center;
+  border-top: 5px solid #DADADA;
+  padding: 1% 0 2% 0;
+}

@@ -1,0 +1,35 @@
+.contact {
+    padding: 2% 0 2% 0;
+    text-align: center;
+    & p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    & form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px;
+        & input, textarea {
+            margin: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid $secondaryHeaderColor;
+        }
+        & button {
+            background-color: $headerColor;
+            margin: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid $headerColor;
+
+        }
+        & button:hover {
+            background-color: $navColor;
+        }
+        & button:focus {
+            background-color: $navColor;
+        }
+    }
+  
+}
