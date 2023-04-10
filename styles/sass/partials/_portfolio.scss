@@ -1,0 +1,29 @@
+.portfolio {
+    padding: 2% 0 5% 0;
+    & .heading-portfolio {
+        text-align: center;
+    }
+    & p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    & .project-01, .project-02 {
+        display: flex;
+        align-items: center;
+        & .project-img {
+            margin-right: 40px;
+            width: 50%;
+        }
+        & .project-caption {
+            width: 50%;
+        }
+    }
+    & a:hover {
+        color: $iconColor;
+        position: relative;
+    }
+    & a:focus {
+        color: $iconColor;
+        position: relative;
+    }
+}

@@ -429,3 +429,37 @@ nav .links i:focus {
 .about p {
   margin-top: 20px;
 }
+
+.portfolio {
+  padding: 2% 0 5% 0;
+}
+.portfolio .heading-portfolio {
+  text-align: center;
+}
+.portfolio p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.portfolio .project-01, .portfolio .project-02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio .project-01 .project-img, .portfolio .project-02 .project-img {
+  margin-right: 40px;
+  width: 50%;
+}
+.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption {
+  width: 50%;
+}
+.portfolio a:hover {
+  color: #E3AA48;
+  position: relative;
+}
+.portfolio a:focus {
+  color: #E3AA48;
+  position: relative;
+}
