@@ -5,32 +5,34 @@ nav {
     justify-content:space-between;
     & ul {
         display: flex;
+        & li, .separator {
+        padding-left: 25px;
+        }
+        & .links-internal:hover {
+            color: $iconColor;
+            border-bottom: 5px solid $iconColor;
+            padding: 0 0 4px;
+        }
+        & .links-internal:focus {
+            color: $iconColor;
+            border-bottom: 5px solid $iconColor;
+            padding: 0 0 4px;
+        }
+        & .links-external i:hover{
+            color: $iconColor;
+            border-bottom: none;
+    }
+        & .links-external i:focus {
+            color: $iconColor;
+            border-bottom: none;
+        }
     }
     & .menu {
         display: flex;
         padding: 10px;
     }
-    & li, .separator {
-        padding-left: 25px;
-    }
-    & .page-links a:hover{
-        color: $iconColor;
-        border-bottom: 5px solid $iconColor;
-        padding: 0 0 4px;
-        
-    }
-    & .page-links a:focus {
-        color: $iconColor;
-        text-decoration: 5px solid underline $iconColor;
-        position: relative;
-    }
-    & .links i:hover{
-        color: $iconColor;
-    }
-    & .links i:focus {
-        color: $iconColor;
-    }
 }
+
 
 // MAIN HEADING
 .heading {

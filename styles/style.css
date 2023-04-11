@@ -322,21 +322,6 @@ header, .about, .contact, footer {
   width: 500px;
 }
 
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-}
-.hamburger .bar {
-  display: block;
-  width: 35px;
-  height: 5px;
-  margin: 10px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #E3AA48;
-}
-
 nav {
   padding: 20px 0 0 0;
   display: -webkit-box;
@@ -351,31 +336,32 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
 }
+nav ul li, nav ul .separator {
+  padding-left: 25px;
+}
+nav ul .links-internal:hover {
+  color: #E3AA48;
+  border-bottom: 5px solid #E3AA48;
+  padding: 0 0 4px;
+}
+nav ul .links-internal:focus {
+  color: #E3AA48;
+  border-bottom: 5px solid #E3AA48;
+  padding: 0 0 4px;
+}
+nav ul .links-external i:hover {
+  color: #E3AA48;
+  border-bottom: none;
+}
+nav ul .links-external i:focus {
+  color: #E3AA48;
+  border-bottom: none;
+}
 nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-}
-nav li, nav .separator {
-  padding-left: 25px;
-}
-nav .page-links a:hover {
-  color: #E3AA48;
-  border-bottom: 5px solid #E3AA48;
-  padding: 0 0 4px;
-}
-nav .page-links a:focus {
-  color: #E3AA48;
-  -webkit-text-decoration: 5px solid underline #E3AA48;
-          text-decoration: 5px solid underline #E3AA48;
-  position: relative;
-}
-nav .links i:hover {
-  color: #E3AA48;
-}
-nav .links i:focus {
-  color: #E3AA48;
 }
 
 .heading {
@@ -528,28 +514,5 @@ footer {
 }
 
 /* Portrait tablet and small desktops */
-@media (max-width: 1250px) {
-  .page-links, .links {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-}
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */

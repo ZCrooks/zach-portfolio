@@ -99,21 +99,5 @@ header, .about, .contact, footer {
         border-radius: 50%;
         height: 500px;
         width: 500px;
-    }
-    
-}
-
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    & .bar {
-        display: block;
-        width: 35px;
-        height: 5px;
-        margin: 10px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: $iconColor;
-    }
+    } 
 }
