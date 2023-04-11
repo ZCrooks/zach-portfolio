@@ -245,7 +245,7 @@ h1, h2, i {
   color: #DADADA;
 }
 
-.sub-heading, .period, a {
+.sub-heading, .logo, a {
   color: #D19D46;
 }
 
@@ -265,7 +265,7 @@ h2 {
   font-size: 3.75rem;
 }
 
-h3 {
+h3, .juno {
   font-size: 1.86rem;
   color: #D19D46;
 }
@@ -320,6 +320,21 @@ header, .about, .contact, footer {
   border-radius: 50%;
   height: 500px;
   width: 500px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+}
+.hamburger .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #E3AA48;
 }
 
 nav {
@@ -497,6 +512,7 @@ nav .links i:focus {
   border-radius: 5px;
   padding: 5px;
   border: 2px solid #DADADA;
+  cursor: pointer;
 }
 .contact form button:hover {
   background-color: #B8B7B7;
@@ -510,3 +526,30 @@ footer {
   border-top: 5px solid #DADADA;
   padding: 1% 0 2% 0;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1250px) {
+  .page-links, .links {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

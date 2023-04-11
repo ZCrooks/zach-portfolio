@@ -20,7 +20,7 @@ h1, h2, i{
     color: $headerColor;
 }
 
-.sub-heading, .period, a {
+.sub-heading, .logo, a {
     color: $secondaryHeaderColor;
 }
 
@@ -40,7 +40,7 @@ h2 {
     font-size: 3.75rem;
 }
 
-h3 {
+h3, .juno {
     font-size: 1.86rem;
     color: $secondaryHeaderColor;
 }
@@ -49,7 +49,7 @@ h2, h3, nav {
     font-weight: 700;
 }
 
-p{
+p {
     font-size: 1.62rem;
     font-weight: 400;
     font-family: $paragraphFont;
@@ -101,4 +101,19 @@ header, .about, .contact, footer {
         width: 500px;
     }
     
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    & .bar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 10px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $iconColor;
+    }
 }

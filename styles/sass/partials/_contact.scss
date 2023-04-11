@@ -1,3 +1,4 @@
+// CONTACT SECTION
 .contact {
     padding: 2% 0 2% 0;
     text-align: center;
@@ -22,7 +23,7 @@
             border-radius: 5px;
             padding: 5px;
             border: 2px solid $headerColor;
-
+            cursor: pointer;
         }
         & button:hover {
             background-color: $navColor;
