@@ -341,6 +341,7 @@ nav ul li, nav ul .separator {
 }
 nav ul .links-internal:hover {
   border-bottom: 5px solid #E3AA48;
+  padding: 0 0 4px;
 }
 nav ul .links-internal:hover a:hover {
   color: #E3AA48;
@@ -492,6 +493,62 @@ nav .menu li {
   width: 250px;
   height: 250px;
   padding-bottom: 10px;
+}
+.skills img:hover {
+  -webkit-animation: effect 0.4s infinite;
+          animation: effect 0.4s infinite;
+}
+@-webkit-keyframes effect {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-4px) rotate(-4deg);
+            transform: translateX(-4px) rotate(-4deg);
+  }
+  40% {
+    -webkit-transform: translateX(-2px) rotate(-2deg);
+            transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(4deg);
+            transform: translateX(4px) rotate(4deg);
+  }
+  80% {
+    -webkit-transform: translateX(2px) rotate(2deg);
+            transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes effect {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-4px) rotate(-4deg);
+            transform: translateX(-4px) rotate(-4deg);
+  }
+  40% {
+    -webkit-transform: translateX(-2px) rotate(-2deg);
+            transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(4deg);
+            transform: translateX(4px) rotate(4deg);
+  }
+  80% {
+    -webkit-transform: translateX(2px) rotate(2deg);
+            transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
 }
 
 .about {

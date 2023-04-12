@@ -10,6 +10,7 @@ nav {
         }
         & .links-internal:hover {
             border-bottom: 5px solid $iconColor;
+            padding: 0 0 4px;
             & a:hover {
                 color: $iconColor;
             }
