@@ -337,25 +337,25 @@ nav ul {
   display: flex;
 }
 nav ul li, nav ul .separator {
-  padding-left: 25px;
+  margin-left: 25px;
 }
 nav ul .links-internal:hover {
-  color: #E3AA48;
   border-bottom: 5px solid #E3AA48;
-  padding: 0 0 4px;
+}
+nav ul .links-internal:hover a:hover {
+  color: #E3AA48;
 }
 nav ul .links-internal:focus {
-  color: #E3AA48;
   border-bottom: 5px solid #E3AA48;
-  padding: 0 0 4px;
+}
+nav ul .links-internal:focus a:hover {
+  color: #E3AA48;
 }
 nav ul .links-external i:hover {
   color: #E3AA48;
-  border-bottom: none;
 }
 nav ul .links-external i:focus {
   color: #E3AA48;
-  border-bottom: none;
 }
 nav .menu {
   display: -webkit-box;
@@ -444,8 +444,8 @@ nav .menu li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.heading .main-image {
-  padding-left: 2%;
+.heading .period {
+  color: #E3AA48;
 }
 .heading img {
   position: relative;
@@ -610,16 +610,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu span {
+  .menu .separator {
     display: none;
-  }
-  .menu li a:hover {
-    color: none;
-    border: none;
-  }
-  .menu li a:focus {
-    color: none;
-    border: none;
   }
   #menu-toggle ~ .menu li {
     height: 0;

@@ -6,25 +6,25 @@ nav {
     & ul {
         display: flex;
         & li, .separator {
-        padding-left: 25px;
+        margin-left: 25px;
         }
         & .links-internal:hover {
-            color: $iconColor;
             border-bottom: 5px solid $iconColor;
-            padding: 0 0 4px;
+            & a:hover {
+                color: $iconColor;
+            }
         }
         & .links-internal:focus {
-            color: $iconColor;
             border-bottom: 5px solid $iconColor;
-            padding: 0 0 4px;
+            & a:hover {
+                color: $iconColor;
+            }
         }
         & .links-external i:hover{
             color: $iconColor;
-            border-bottom: none;
-    }
-        & .links-external i:focus {
+        }
+        & .links-external i:focus{
             color: $iconColor;
-            border-bottom: none;
         }
     }
     & .menu {
@@ -36,9 +36,7 @@ nav {
         }
     }
 }
-
 // Special Thanks to 'Alvarotrigo' of CodePen for the Hamburger Menu Styling
-
 .menu-button-container {
     display: none;
     height: 100%;
@@ -94,25 +92,14 @@ nav {
     transform: rotate(-405deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // MAIN HEADING
 .heading {
     padding: 10% 0  5% 0;
     display: flex;
-    justify-content: center;
-    & .main-image{
-        padding-left: 2%;
-    }
+    justify-content: center;        
+    & .period {
+            color: $iconColor;
+        }
     & img {
         position: relative;
         bottom: 10%;
@@ -126,6 +113,7 @@ nav {
         & p {
             padding-bottom: 20px;
         }
+
     }
 
 }
