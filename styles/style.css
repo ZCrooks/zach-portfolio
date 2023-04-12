@@ -237,6 +237,21 @@ img {
   margin: 0 auto;
 }
 
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 h1, h2, h3, nav, a {
   font-family: "Open Sans";
 }
@@ -583,6 +598,10 @@ nav .menu li {
 }
 .portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption {
   width: 50%;
+}
+.portfolio a {
+  border: 2px solid #DADADA;
+  padding: 10px;
 }
 .portfolio a:hover {
   color: #E3AA48;

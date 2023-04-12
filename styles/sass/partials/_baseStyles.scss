@@ -11,6 +11,21 @@
     margin: 0 auto;
 }
 
+// SKIP LINK 
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 // FONT SIZES AND STYLES
 h1, h2, h3, nav, a {
     font-family: $headerFont;
