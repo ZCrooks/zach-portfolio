@@ -323,11 +323,18 @@ header, .about, .contact, footer {
   background-color: #2E2E35;
 }
 
-.skills, .portfolio {
+.skills {
   background-color: #34343B;
 }
-.skills li, .portfolio li {
+.skills li {
   background-color: #2E2E35;
+}
+
+.portfolio {
+  background-color: #34343B;
+}
+.portfolio li {
+  background-color: none;
 }
 
 .main-image div {
@@ -582,7 +589,8 @@ nav .menu li {
 }
 .portfolio p {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .portfolio .project-01, .portfolio .project-02 {
   display: -webkit-box;
@@ -591,6 +599,7 @@ nav .menu li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20pxs;
 }
 .portfolio .project-01 .project-img, .portfolio .project-02 .project-img {
   margin-right: 40px;
@@ -610,6 +619,17 @@ nav .menu li {
 .portfolio a:focus {
   color: #E3AA48;
   position: relative;
+}
+.portfolio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 0 5% 0;
+}
+.portfolio ul img {
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
 }
 
 .contact {

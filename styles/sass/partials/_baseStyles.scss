@@ -101,10 +101,17 @@ header, .about, .contact, footer {
     background-color: $primaryColor;
 }
 
-.skills, .portfolio {
+.skills {
     background-color: $secondaryColor;
     & li { 
       background-color: $primaryColor;  
+    }
+}
+
+.portfolio {
+    background-color: $secondaryColor;
+    & li {
+        background-color: none;
     }
 }
 
