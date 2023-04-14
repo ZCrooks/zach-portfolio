@@ -254,14 +254,14 @@ img {
 
 h1, h2, h3, nav, a {
   font-family: "Open Sans";
-  -webkit-transition: background 0.3s linear;
-  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 
 h1, h2, i {
   color: #DADADA;
-  -webkit-transition: background 0.3s linear;
-  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 
 .sub-heading, .logo, a {
@@ -325,14 +325,14 @@ li p {
 
 header, .about, .contact, footer {
   background-color: #2E2E35;
-  -webkit-transition: background 0.3s linear;
-  transition: background 0.3s linear;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 
 .skills {
   background-color: #34343B;
-  -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 .skills li {
   background-color: #2E2E35;
@@ -340,8 +340,8 @@ header, .about, .contact, footer {
 
 .portfolio {
   background-color: #34343B;
-  -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 .portfolio li {
   background-color: none;
@@ -360,7 +360,7 @@ body.light h3,
 body.light p,
 body.light nav,
 body.light a,
-body.light i,
+body.light i:not(.fas),
 body.light span:not(.logo) {
   color: black;
 }
@@ -368,7 +368,8 @@ body.light span:not(.logo) {
 body.light header,
 body.light .about,
 body.light .contact,
-body.light footer {
+body.light footer,
+body.light li {
   background-color: #FFFACD;
 }
 
@@ -376,6 +377,10 @@ body.light .skills,
 body.light .portfolio,
 body.light .languages li {
   background-color: #F5FFFA;
+}
+
+body.light footer {
+  border-top: 5px solid black;
 }
 
 nav {
@@ -458,7 +463,7 @@ nav .menu li {
   background-color: #E3AA48;
   position: absolute;
   height: 5px;
-  width: 35px;
+  width: 50px;
   -webkit-transition: -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -762,6 +767,10 @@ footer {
   text-align: center;
   border-top: 5px solid #DADADA;
   padding: 1% 0 2% 0;
+}
+
+body.light footer {
+  border-top: 5px solid black;
 }
 
 /* Portrait tablet and small desktops */
