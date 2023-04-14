@@ -401,17 +401,15 @@ nav ul li, nav ul .separator {
   margin-left: 25px;
 }
 nav ul .links-internal:hover {
-  border-bottom: 5px solid #E3AA48;
   padding: 0 0 4px;
 }
 nav ul .links-internal:hover a:hover {
   color: #E3AA48;
-}
-nav ul .links-internal:focus {
   border-bottom: 5px solid #E3AA48;
 }
 nav ul .links-internal:focus a:hover {
   color: #E3AA48;
+  border-bottom: 5px solid #E3AA48;
 }
 nav ul .links-external i:hover {
   color: #E3AA48;
@@ -511,7 +509,7 @@ nav .menu li {
 }
 .heading img {
   position: relative;
-  bottom: 10%;
+  bottom: 20%;
   right: 5%;
 }
 .heading .introduction {
@@ -675,6 +673,7 @@ nav .menu li {
 }
 .portfolio .heading-portfolio {
   text-align: center;
+  margin-bottom: 20px;
 }
 .portfolio p {
   margin-top: 20px;
@@ -685,10 +684,6 @@ nav .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20pxs;
 }
 .portfolio .project-01 .project-img, .portfolio .project-02 .project-img {
   margin-right: 40px;
@@ -696,6 +691,7 @@ nav .menu li {
 }
 .portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption {
   width: 50%;
+  margin-top: 20px;
 }
 .portfolio a {
   border: 2px solid #DADADA;
@@ -719,6 +715,9 @@ nav .menu li {
   height: 50px;
   width: 50px;
   padding-right: 10px;
+}
+.portfolio .links-projects {
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -767,10 +766,6 @@ footer {
   text-align: center;
   border-top: 5px solid #DADADA;
   padding: 1% 0 2% 0;
-}
-
-body.light footer {
-  border-top: 5px solid black;
 }
 
 /* Portrait tablet and small desktops */
@@ -836,6 +831,61 @@ body.light footer {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  .heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+  }
+  .heading .main-img {
+    position: relative;
+    bottom: 100px;
+  }
+  .heading .main-img img {
+    bottom: 20%;
+  }
 }
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 950px) {
+  .project-02, .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-caption, .project-img {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .project-caption ul, .project-img ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .links-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .links-projects a {
+    margin-right: 10px;
+  }
+}

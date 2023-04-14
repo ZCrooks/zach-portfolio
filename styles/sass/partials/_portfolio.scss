@@ -3,6 +3,7 @@
     padding: 2% 0 5% 0;
     & .heading-portfolio {
         text-align: center;
+        margin-bottom: 20px;
     }
     & p {
         margin-top: 20px;
@@ -11,14 +12,13 @@
     }
     & .project-01, .project-02 {
         display: flex;
-        align-items: center;
-        margin-top: 20pxs;
-        & .project-img {
+        & .project-img { 
             margin-right: 40px;
             width: 50%;
         }
         & .project-caption {
             width: 50%;
+            margin-top: 20px;
         }
     }
     & a {
@@ -41,5 +41,8 @@
             width: 50px;
             padding-right: 10px;
         }
+    }
+    & .links-projects {
+        margin-bottom: 20px;
     }
 }

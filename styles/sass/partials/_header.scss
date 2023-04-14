@@ -9,16 +9,16 @@ nav {
         margin-left: 25px;
         }
         & .links-internal:hover {
-            border-bottom: 5px solid $iconColor;
             padding: 0 0 4px;
             & a:hover {
                 color: $iconColor;
+                border-bottom: 5px solid $iconColor;
             }
         }
         & .links-internal:focus {
-            border-bottom: 5px solid $iconColor;
             & a:hover {
                 color: $iconColor;
+                border-bottom: 5px solid $iconColor;
             }
         }
         & .links-external i:hover{
@@ -103,7 +103,7 @@ nav {
         }
     & img {
         position: relative;
-        bottom: 10%;
+        bottom: 20%;
         right: 5%;
     }
     & .introduction {
