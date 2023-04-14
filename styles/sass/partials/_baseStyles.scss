@@ -29,10 +29,12 @@
 // FONT SIZES AND STYLES
 h1, h2, h3, nav, a {
     font-family: $headerFont;
+    transition: background 0.3s linear;
 }
 
 h1, h2, i{
     color: $headerColor;
+    transition: background 0.3s linear;
 }
 
 .sub-heading, .logo, a {
@@ -99,10 +101,12 @@ li {
 // BACKGROUND COLORS
 header, .about, .contact, footer {
     background-color: $primaryColor;
+    transition: background 0.3s linear;
 }
 
 .skills {
     background-color: $secondaryColor;
+    transition: background 0.2s linear;
     & li { 
       background-color: $primaryColor;  
     }
@@ -110,6 +114,7 @@ header, .about, .contact, footer {
 
 .portfolio {
     background-color: $secondaryColor;
+    transition: background 0.2s linear;
     & li {
         background-color: none;
     }
@@ -122,4 +127,30 @@ header, .about, .contact, footer {
         height: 500px;
         width: 500px;
     } 
+}
+
+// LIGHT TOGGLE COLOURS
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light p,
+body.light nav,
+body.light a, 
+body.light i,
+body.light span:not(.logo)  {
+    color: $textLightColor;
+}
+
+body.light header,
+body.light .about,
+body.light .contact,
+body.light footer {
+    background-color: $primaryLightColor;
+}
+
+body.light .skills,
+body.light .portfolio,
+body.light .languages li {
+    background-color: $secondaryLightColor;
 }

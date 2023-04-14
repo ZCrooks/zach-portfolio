@@ -254,10 +254,14 @@ img {
 
 h1, h2, h3, nav, a {
   font-family: "Open Sans";
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
 }
 
 h1, h2, i {
   color: #DADADA;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
 }
 
 .sub-heading, .logo, a {
@@ -321,10 +325,14 @@ li p {
 
 header, .about, .contact, footer {
   background-color: #2E2E35;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
 }
 
 .skills {
   background-color: #34343B;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 .skills li {
   background-color: #2E2E35;
@@ -332,6 +340,8 @@ header, .about, .contact, footer {
 
 .portfolio {
   background-color: #34343B;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 .portfolio li {
   background-color: none;
@@ -342,6 +352,30 @@ header, .about, .contact, footer {
   border-radius: 50%;
   height: 500px;
   width: 500px;
+}
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light p,
+body.light nav,
+body.light a,
+body.light i,
+body.light span:not(.logo) {
+  color: black;
+}
+
+body.light header,
+body.light .about,
+body.light .contact,
+body.light footer {
+  background-color: #FFFACD;
+}
+
+body.light .skills,
+body.light .portfolio,
+body.light .languages li {
+  background-color: #F5FFFA;
 }
 
 nav {
@@ -485,6 +519,59 @@ nav .menu li {
   padding-bottom: 20px;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+  font-size: 20px;
+}
+
+.fa-sun {
+  color: #f39c12;
+  font-size: 20px;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
 .skills {
   text-align: center;
   padding-top: 20px;
@@ -503,9 +590,6 @@ nav .menu li {
   padding: 2% 0 5% 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .skills ul li {
   margin: 15px;
@@ -513,7 +597,7 @@ nav .menu li {
 }
 .skills img {
   width: 250px;
-  height: 250px;
+  height: 150px;
   padding-bottom: 10px;
 }
 .skills img:hover {
@@ -624,7 +708,7 @@ nav .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2% 0 5% 0;
+  padding: 0 0 5% 0;
 }
 .portfolio ul img {
   height: 50px;
