@@ -38,7 +38,7 @@ h1, h2, i{
 }
 
 .sub-heading, .logo, a {
-    color: $secondaryHeaderColor;
+    color: $iconColor;
 }
 
 .sub-heading {
@@ -59,7 +59,7 @@ h2 {
 
 h3, .juno {
     font-size: 1.86rem;
-    color: $secondaryHeaderColor;
+    color: $iconColor;
 }
 
 h2, h3, nav {
@@ -135,20 +135,19 @@ body.light h1,
 body.light h2,
 body.light h3,
 body.light p,
-body.light nav,
 body.light a, 
 body.light i:not(.fas),
-body.light span:not(.logo)  {
+body.light span:not(.logo, .period, .juno)  {
     color: $textLightColor;
 }
 
 body.light header,
 body.light .about,
 body.light .contact,
-body.light footer,
-body.light li {
-    background-color: $primaryLightColor;
+body.light footer {
+    background-image: linear-gradient(to right, $primaryLightColor, $secondaryLightColor);
 }
+
 
 body.light .skills,
 body.light .portfolio,

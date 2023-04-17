@@ -265,7 +265,7 @@ h1, h2, i {
 }
 
 .sub-heading, .logo, a {
-  color: #D19D46;
+  color: #E3AA48;
 }
 
 .sub-heading {
@@ -286,7 +286,7 @@ h2 {
 
 h3, .juno {
   font-size: 1.86rem;
-  color: #D19D46;
+  color: #E3AA48;
 }
 
 h2, h3, nav {
@@ -358,19 +358,18 @@ body.light h1,
 body.light h2,
 body.light h3,
 body.light p,
-body.light nav,
 body.light a,
 body.light i:not(.fas),
-body.light span:not(.logo) {
+body.light span:not(.logo, .period, .juno) {
   color: black;
 }
 
 body.light header,
 body.light .about,
 body.light .contact,
-body.light footer,
-body.light li {
-  background-color: #FFFACD;
+body.light footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFFACD), to(#F5FFFA));
+  background-image: linear-gradient(to right, #FFFACD, #F5FFFA);
 }
 
 body.light .skills,
@@ -667,6 +666,10 @@ nav .menu li {
 .about p {
   margin-top: 20px;
 }
+.about .break {
+  display: block;
+  margin-top: 10px;
+}
 
 .portfolio {
   padding: 2% 0 5% 0;
@@ -745,7 +748,7 @@ nav .menu li {
   margin: 5px;
   border-radius: 5px;
   padding: 5px;
-  border: 2px solid #D19D46;
+  border: 2px solid #E3AA48;
 }
 .contact form button {
   background-color: #DADADA;
@@ -764,7 +767,7 @@ nav .menu li {
 
 footer {
   text-align: center;
-  border-top: 5px solid #DADADA;
+  border-top: 5px solid #E3AA48;
   padding: 1% 0 2% 0;
 }
 
@@ -847,6 +850,9 @@ footer {
   }
   .heading .main-img img {
     bottom: 20%;
+  }
+  body.light .menu li {
+    background-color: #F5FFFA;
   }
 }
 @media (max-width: 950px) {
