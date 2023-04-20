@@ -145,9 +145,8 @@ body.light header,
 body.light .about,
 body.light .contact,
 body.light footer {
-    background-image: linear-gradient(to right, $primaryLightColor, $secondaryLightColor);
+    background-image: linear-gradient(to bottom right, $primaryLightColor, $secondaryLightColor);
 }
-
 
 body.light .skills,
 body.light .portfolio,

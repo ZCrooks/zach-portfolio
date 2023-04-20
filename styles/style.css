@@ -368,8 +368,8 @@ body.light header,
 body.light .about,
 body.light .contact,
 body.light footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#FFFACD), to(#F5FFFA));
-  background-image: linear-gradient(to right, #FFFACD, #F5FFFA);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFFACD), to(#F5FFFA));
+  background-image: linear-gradient(to bottom right, #FFFACD, #F5FFFA);
 }
 
 body.light .skills,
@@ -691,6 +691,10 @@ nav .menu li {
 .portfolio .project-01 .project-img, .portfolio .project-02 .project-img {
   margin-right: 40px;
   width: 50%;
+}
+.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img {
+  -webkit-box-shadow: 10px 10px 8px grey;
+          box-shadow: 10px 10px 8px grey;
 }
 .portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption {
   width: 50%;
