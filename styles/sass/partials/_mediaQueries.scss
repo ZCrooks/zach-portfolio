@@ -64,13 +64,12 @@
     }
 }
 
-
 @media (max-width: 950px) {
-    .project-02, .portfolio {
+    .project-01, .project-03 {
         flex-direction: column;
         justify-content: center;
     }
-    .project-01 {
+    .project-02 {
         flex-direction: column-reverse;
         justify-content: center;
     }

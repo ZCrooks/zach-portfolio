@@ -683,20 +683,20 @@ nav .menu li {
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-.portfolio .project-01, .portfolio .project-02 {
+.portfolio .project-01, .portfolio .project-02, .portfolio .project-03 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.portfolio .project-01 .project-img, .portfolio .project-02 .project-img {
+.portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img {
   margin-right: 40px;
   width: 50%;
 }
-.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img {
+.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img, .portfolio .project-03 .project-img img {
   -webkit-box-shadow: 10px 10px 8px grey;
           box-shadow: 10px 10px 8px grey;
 }
-.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption {
+.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption, .portfolio .project-03 .project-caption {
   width: 50%;
   margin-top: 20px;
 }
@@ -860,7 +860,7 @@ footer {
   }
 }
 @media (max-width: 950px) {
-  .project-02, .portfolio {
+  .project-01, .project-03 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -869,7 +869,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .project-01 {
+  .project-02 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
