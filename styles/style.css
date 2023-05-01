@@ -378,10 +378,6 @@ body.light .languages li {
   background-color: #F5FFFA;
 }
 
-body.light footer {
-  border-top: 5px solid black;
-}
-
 nav {
   padding: 20px 0 0 0;
   display: -webkit-box;
@@ -755,7 +751,7 @@ nav .menu li {
   border: 2px solid #E3AA48;
 }
 .contact form button {
-  background-color: #DADADA;
+  background-color: #E3AA48;
   margin: 5px;
   border-radius: 5px;
   padding: 5px;
@@ -763,10 +759,10 @@ nav .menu li {
   cursor: pointer;
 }
 .contact form button:hover {
-  background-color: #B8B7B7;
+  background-color: #8F8F8F;
 }
 .contact form button:focus {
-  background-color: #B8B7B7;
+  background-color: #8F8F8F;
 }
 
 footer {

@@ -18,7 +18,7 @@
             border: 2px solid $iconColor;
         }
         & button {
-            background-color: $headerColor;
+            background-color: $iconColor;
             margin: 5px;
             border-radius: 5px;
             padding: 5px;
@@ -26,10 +26,10 @@
             cursor: pointer;
         }
         & button:hover {
-            background-color: $navColor;
+            background-color: $paragraphColor;
         }
         & button:focus {
-            background-color: $navColor;
+            background-color: $paragraphColor;
         }
     }
   
