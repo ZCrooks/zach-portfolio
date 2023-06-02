@@ -272,6 +272,10 @@ h1, h2, i {
   font-weight: 800;
 }
 
+.about-text {
+  line-height: 130%;
+}
+
 h1 {
   font-size: 5.62rem;
   font-weight: 800;
@@ -679,20 +683,20 @@ nav .menu li {
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-.portfolio .project-01, .portfolio .project-02, .portfolio .project-03 {
+.portfolio .project-01, .portfolio .project-02, .portfolio .project-03, .portfolio .project-04 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img {
+.portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img, .portfolio .project-04 .project-img {
   margin-right: 40px;
   width: 50%;
 }
-.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img, .portfolio .project-03 .project-img img {
+.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img, .portfolio .project-03 .project-img img, .portfolio .project-04 .project-img img {
   -webkit-box-shadow: 10px 10px 8px grey;
           box-shadow: 10px 10px 8px grey;
 }
-.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption, .portfolio .project-03 .project-caption {
+.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption, .portfolio .project-03 .project-caption, .portfolio .project-04 .project-caption {
   width: 50%;
   margin-top: 20px;
 }
