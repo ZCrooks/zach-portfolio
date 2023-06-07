@@ -687,6 +687,9 @@ nav .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img, .portfolio .project-04 .project-img {
   margin-right: 40px;
@@ -859,23 +862,25 @@ footer {
   }
 }
 @media (max-width: 1050px) {
+  .project-01, .project-02, .project-03, .project-04 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
   .project-01, .project-03 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .project-02, .project-04 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .project-caption, .project-img {
     width: 100% !important;
@@ -896,6 +901,9 @@ footer {
   }
   .links-projects a {
     margin-right: 10px;
+  }
+  .project-img {
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 720px) {
