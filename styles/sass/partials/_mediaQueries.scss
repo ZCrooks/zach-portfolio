@@ -63,12 +63,12 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
     .project-01, .project-03 {
         flex-direction: column;
         justify-content: center;
     }
-    .project-02 {
+    .project-02, .project-04 {
         flex-direction: column-reverse;
         justify-content: center;
     }
