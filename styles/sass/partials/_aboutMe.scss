@@ -1,6 +1,8 @@
 // ABOUT ME SECTION
 .about {
-    text-align: center;
+    & .sub-heading, h2 {
+        text-align: center;
+    }
     padding: 2% 0 5% 0;
     & p {
         margin-top: 20px;
