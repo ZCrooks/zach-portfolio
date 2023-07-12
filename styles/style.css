@@ -689,7 +689,7 @@ nav .menu li {
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-.portfolio .project-01, .portfolio .project-02, .portfolio .project-03, .portfolio .project-04 {
+.portfolio .project-01, .portfolio .project-02, .portfolio .project-03, .portfolio .project-04, .portfolio .project-05 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,15 +697,15 @@ nav .menu li {
       -ms-flex-align: center;
           align-items: center;
 }
-.portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img, .portfolio .project-04 .project-img {
+.portfolio .project-01 .project-img, .portfolio .project-02 .project-img, .portfolio .project-03 .project-img, .portfolio .project-04 .project-img, .portfolio .project-05 .project-img {
   margin-right: 40px;
   width: 50%;
 }
-.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img, .portfolio .project-03 .project-img img, .portfolio .project-04 .project-img img {
+.portfolio .project-01 .project-img img, .portfolio .project-02 .project-img img, .portfolio .project-03 .project-img img, .portfolio .project-04 .project-img img, .portfolio .project-05 .project-img img {
   -webkit-box-shadow: 10px 10px 8px grey;
           box-shadow: 10px 10px 8px grey;
 }
-.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption, .portfolio .project-03 .project-caption, .portfolio .project-04 .project-caption {
+.portfolio .project-01 .project-caption, .portfolio .project-02 .project-caption, .portfolio .project-03 .project-caption, .portfolio .project-04 .project-caption, .portfolio .project-05 .project-caption {
   width: 50%;
   margin-top: 20px;
 }
@@ -868,7 +868,7 @@ footer {
   }
 }
 @media (max-width: 1050px) {
-  .project-01, .project-02, .project-03, .project-04 {
+  .project-01, .project-02, .project-03, .project-04, .project-05 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -876,7 +876,7 @@ footer {
         -ms-flex-align: start;
             align-items: start;
   }
-  .project-01, .project-03 {
+  .project-01, .project-03, .project-05 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

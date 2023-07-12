@@ -65,14 +65,14 @@
 
 @media (max-width: 1050px) {
 
-    .project-01, .project-02, .project-03, .project-04 {
+    .project-01, .project-02, .project-03, .project-04, .project-05 {
         justify-content: center;
         align-items: start;
     }
-    .project-01, .project-03 {
+    .project-01, .project-03, .project-05 {
         flex-direction: column;
     }
-    .project-02, .project-04 {
+    .project-02, .project-04{
         flex-direction: column-reverse;
     }
     .project-caption, .project-img {
