@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // WRAPPER
 .wrapper {
     max-width: 1300px;
@@ -70,7 +74,7 @@ h2, h3, nav {
     font-weight: 700;
 }
 
-p {
+p, input, textarea{
     font-size: 1.62rem;
     font-weight: 400;
     font-family: $paragraphFont;
